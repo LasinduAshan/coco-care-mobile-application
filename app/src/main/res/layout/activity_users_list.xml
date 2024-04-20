@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwithoutname"
+    tools:context=".Users_list">
+
+    <ImageView
+        android:id="@+id/hamburgerIcon"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="321dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="30dp"
+        app:srcCompat="@drawable/hamberger_icon" />
+
+    <ImageView
+        android:id="@+id/homeICon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="244dp"
+        app:srcCompat="@drawable/home_btn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/UserrecycleView"
+        android:scrollbars="vertical"
+        android:layout_marginTop="140dp"
+        />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/Userfab"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_margin="40dp"-->
+<!--        android:src="@drawable/baseline_add_24"-->
+<!--        android:backgroundTint="@color/greenPrimary"-->
+<!--        app:tint="@color/white"/>-->
+
+</RelativeLayout>

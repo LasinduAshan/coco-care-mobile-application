@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwithoutname"
+    android:orientation="vertical"
+    tools:context=".Diseases_Add">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="20dp">
+
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Diseases"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="@color/greenPrimary"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/diseaseImage"
+                android:src="@drawable/upload_bg"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Name of disease :"
+                android:textSize="20dp"
+                android:textColor="@color/greenPrimary"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diseaseName"
+                android:hint="Enter Disease Name"
+                android:textColor="@color/black"
+                android:gravity="start|center_vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Treatement :"
+                android:textSize="20dp"
+                android:textColor="@color/greenPrimary"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/treatement"
+                android:textColor="@color/black"
+                android:hint="Enter Treatement for disease"
+                android:gravity="start|center_vertical"/>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Add"
+                android:id="@+id/add_btn"
+                android:textSize="25sp"
+                android:backgroundTint="@color/greenPrimary"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="40dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
