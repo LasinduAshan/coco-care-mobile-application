@@ -60,8 +60,16 @@ public class User_Account extends AppCompatActivity {
         backIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(User_Account.this, Users_list.class);
-                startActivity(intent);
+                // Retrieve user role from SharedPreferences
+                SharedPreferences sharedPreferences = getSharedPreferences("user_role", MODE_PRIVATE);
+                String role = sharedPreferences.getString("role", "");
+
+                // Determine the activity to redirect based on the user's role
+                Class<?> targetActivity = (role != null && role.equals("admin")) ? Users_list.class : Home.class;
+
+                // Start the corresponding activity
+                startActivity(new Intent(User_Account.this, targetActivity));
+                finish(); // Close current activity
             }
         });
 
