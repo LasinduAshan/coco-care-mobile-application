@@ -52,4 +52,12 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.14.2")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
     implementation("com.github.clans:fab:1.6.4")
+    androidTestImplementation ("androidx.test:runner:1.5.2")
+    testImplementation ("org.mockito:mockito-core:3.12.4")
+    testImplementation ("org.robolectric:robolectric:4.6.1")
+    androidTestImplementation ("androidx.test.espresso:espresso-intents:3.5.1")
+
+
+
+
 }

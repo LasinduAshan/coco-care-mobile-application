@@ -31,10 +31,10 @@ public class RegisterIntegrationTest {
     @Test
     public void testRegisterButtonClicked() {
 
-        Espresso.onView(ViewMatchers.withId(R.id.userName)).perform(ViewActions.typeText("lasindu_test"));
-        Espresso.onView(ViewMatchers.withId(R.id.userPhone)).perform(ViewActions.typeText("0712345678"));
-        Espresso.onView(ViewMatchers.withId(R.id.userEmail)).perform(ViewActions.typeText("Ltest@gmail.com"));
-        Espresso.onView(ViewMatchers.withId(R.id.userPassword)).perform(ViewActions.typeText("lasindu123"), ViewActions.closeSoftKeyboard());
+        Espresso.onView(withId(R.id.userName)).perform(ViewActions.typeText("lasindu_test"));
+        Espresso.onView(withId(R.id.userPhone)).perform(ViewActions.typeText("0712345678"));
+        Espresso.onView(withId(R.id.userEmail)).perform(ViewActions.typeText("Ltest@gmail.com"));
+        Espresso.onView(withId(R.id.userPassword)).perform(ViewActions.typeText("lasindu123"), ViewActions.closeSoftKeyboard());
 
         Espresso.onView(withId(R.id.register_btn)).perform(ViewActions.click());
         Espresso.onView(withText("Registration Successful")).check(matches(isDisplayed()));
